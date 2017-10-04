@@ -6,16 +6,22 @@
     <div class="row">
         <div class="col-sm-4" style=""></div>
         <div class="col-sm-4" style=""></div>
-        <div class="col-sm-4" style="text-align: center"> <a href="{{url('/')}}/categories/create" class="btn btn-success btn-md">Add Category</a></div>
+        <div class="col-sm-4" style="text-align: center"> </div>
     </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Category Name</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="box">
+        <div class="box-header">
+            <a href="{{url('/')}}/categories/create" class="btn btn-success btn-md">Add Category</a>
+        </div>
+        <br/>
+        <div class="box-body">
+          <table id="example2" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
             @foreach($categories as $category)
             <tr>
                 <td>{{$category->name}}</td>
@@ -25,7 +31,9 @@
                 </td>
             </tr>
             @endforeach
-        </tbody>
-    </table>
+            </tbody>
+          </table>
+        </div>
+    </div>
 </section>
 @endsection

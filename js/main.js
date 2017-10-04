@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    $('#example2').DataTable({
+          "paging": true,
+          "pageLength": 10,
+          "lengthChange": true,
+          "searching": true,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false,
+          "filter" : true,
+          "bDestroy": true
+    });
     $(document).on('submit', '#product-frm', function(){
 
         elem = $(this);

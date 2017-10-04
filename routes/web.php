@@ -33,6 +33,10 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::post('/categories/', 'CategoryController@store');
 	Route::post('/categories/update/{id}', 'CategoryController@update');
+	
+	Route::get('/transactions', 'TransactionController@index');
+
+	Route::get('/customers', 'CustomerController@index');
 
 });
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
