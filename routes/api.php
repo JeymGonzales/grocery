@@ -20,3 +20,5 @@ use Illuminate\Http\Request;
 Route::post('/register', 'ApiController@register');
 Route::post('/history/{id}', 'ApiController@history');
 Route::post('/purchase', 'ApiController@purchase');
+Route::post('/products/{id}', 'ApiController@products');
+Route::post('/products/detail/{id}', 'ApiController@view');

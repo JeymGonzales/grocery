@@ -10,18 +10,31 @@ class ApiController extends Controller
 {
     public function register(Request $request) 
     {
-    	dd($request->all());
+        dd($request->all());
     }
 
 
     public function purchase(Request $request)
     {
-    	dd($request->all());
+        dd($request->all());
     }
 
+    // user id
     public function history($uid)
     {
-    	dd($uid);
+        dd($uid);
+    }
+
+    // category id
+    public function products($cid)
+    {
+        dd($uid);
+    }
+
+    // product id
+    public function view($pid)
+    {
+        dd($pid);
     }
 
 
